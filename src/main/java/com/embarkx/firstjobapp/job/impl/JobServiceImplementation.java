@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class JobServiceImplementation implements JobService {
-    private List<Job> jobs = new ArrayList<>();
+    private final List<Job> jobs = new ArrayList<>();
     private Long id = 1L;
     @Override
     public List<Job> findAll() {
